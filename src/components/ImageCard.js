@@ -32,7 +32,7 @@ class ImageCard extends React.Component {
             <img ref={this.imageRef} src={urls.regular} alt={description} />
             <div className="desc-image">
               <div className="top-right">
-                <i class="fas fa-heart" />
+                <i className="fas fa-heart" />
                 {likes}
               </div>
               <div className="bottom-left">{user.name}</div>
