@@ -2,16 +2,21 @@ import React from "react";
 import unsplash from "../API/Unsplash";
 import SearchInput from "./SearchInput";
 import ImageList from "./ImageList";
+import "semantic-ui-css/semantic.min.css";
 
 class App extends React.Component {
   state = { images: [] };
 
   onSearchSubmit = async term => {
     const response = await unsplash.get("/search/photos", {
-      params: { query: term }
+      params: {
+        query: term
+      }
     });
 
-    this.setState({ images: response.data.results });
+    this.setState({
+      images: response.data.results
+    });
   };
 
   render() {

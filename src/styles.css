@@ -36,6 +36,13 @@
 .desc-image .top-right {
   display: none;
 }
+.block-align {
+  display: flex;
+  /* align-items: center; */
+  /* height: 100%;
+  text-align: left; */
+  justify-content: space-between;
+}
 i {
   color: red;
 }
@@ -48,4 +55,7 @@ a .top-right {
 }
 a:hover .top-right {
   display: inline;
+}
+.special-cursor {
+  cursor: zoom-in;
 }
